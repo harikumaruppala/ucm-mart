@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+	<head>
+		<title>Login page</title>
+		<link href="css/style.css" rel="stylesheet">
+		<script>
+			$(document).ready(function(){
+				$("#select").change(function(){
+					var type=$("#select").val();
+					if(type=='Accomadation')
+					{
+					$("#select1").html("<select class="select">
+						  <option value="All Item Type">All Item Type</option>
+						  <option value="For Sharing">For Sharing</option>
+						  <option value="For rent">For rent</option>
+						  <option value="For pg">For pg</option>
+						  <option value="sales">sales</option>
+						</select>");
+					}
+					else if(type=='carpooling')
+					{
+					$("select1").html("<select class="select">
+						  <option value="All Item Type">All Item Type</option>
+						  <option value="For Sharing">Oneway</option>
+						  <option value="For rent">TwoWay</option>
+						</select>");
+					}
+					else if(type=='TS State')
+					{
+					$("#select1").html("<select class="select">
+						  <option value="All Item Type">All Item Type</option>
+						  <option value="For Sharing">Music</option>
+						  <option value="For rent">Computer</option>
+						  <option value="For rent">Phone</option>
+						</select>");
+					}
+					else{
+					$("#select1").html("<select class="select">
+						  <option value="All Item Type">All Item Type</option>
+						  <option value="For Sharing">computer science</option>
+						  <option value="For rent">Nursing</option>
+						  <option value="For rent">Medical</option>
+						</select>");
+					}
+					
+				});
+				
+			});
+		</script>
+		 <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		 <!-- Custom Fonts -->
+		<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+		 <link href="css/agency.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="main">
+			<div class="head">
+				<div class="subhead">
+					<img src="img/images.png" class="logo">
+					<h2 class="title">UCM ISO MART</h2>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="submenu">
+					<ul class="nav">
+						<li><a href="login.html">Home</a></li>
+						<li><a href="aboutus.html">About Us</a></li>
+						<li><a href="postanad.html">Post an ad</a>
+							<ul class="subnav">
+								<li><a href="">Accomadation</a></li>
+								<li><a href="">Carpooling</a></li>
+								<li><a href="">Electronics</a></li>
+								<li><a href="">Books</a></li>
+							</ul>
+						</li>
+						<li><a href="myucmmart.html">My UCM MART</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="slider"></div>
+			<div class="content">
+				<div class="box1">
+					<select class="select">
+					  <option value="select location">select location</option>
+					  <option value="Kansas City">Kansas City</option>
+					  <option value="Warrensburg">Warrensburg</option>
+					  <option value="Lees Summit">Lees Summit</option>
+					</select>
+  
+					<img src="img/car.jpg" class="image">
+				</div>
+				<div class="box2">
+					<form>
+                        <input type="text" placeholder="Search..." required>
+                        <input type="button" value="Search">
+					</form>
+					<div class="sub">
+					<h3>Simplify your search</h3>
+					<select id="select">
+					  <option value="select your category">select your category</option>
+					  <option value="Accomadation">Accomadation</option>
+					  <option value="Carpooling">Carpooling</option>
+					  <option value="Electronics">Electronics</option>
+					  <option value="Books">Books</option>
+					</select>
+					</div>
+					<div id="select1">
+					<select class="select">
+						  <option value="All Item Type">All Item Type</option>
+						  <option value="For Sharing">For Sharing</option>
+						  <option value="For rent">For rent</option>
+						  <option value="For pg">For pg</option>
+						  <option value="sales">sales</option>
+						</select>
+						<select class="select">
+						  <option value="All Item SubType">All Item SubType</option>
+						  <option value="For Sharing">For Semi furnishing</option>
+						  <option value="For rent">fully furnishing</option>
+						  <option value="For pg">Furnished</option>
+						</select>
+					
+					
+					</div>
+					
+				</div>
+				<div class="box3">
+					<select class="select">
+					  <option value="Post An Ad">Post An Ad</option>
+					  <option value="Accomadation">Accomadation</option>
+					  <option value="Carpooling">Carpooling</option>
+					  <option value="Electronics">Electronics</option>
+					  <option value="Books">Books</option>
+					</select>
+  
+					<img src="img/books.jpeg" class="image">
+					
+				</div>
+			</div>
+			<div class="list">
+					<h3>Sailent Features</h3>
+						<ul class="sublist">
+						<li>The Advertisement will be available in portal for 20 calendar days</li>
+						<li>UCM ISO MART feature can be utilised to keep track of self posted and responded advertisements.</li>
+						<li>Contact Owner feature can be utilised to send a mail and to get contact details of Ad Owner.</li>
+						<li>Report Abuse feature can be utilised to send an advertisement for review to check wherever the contents posted are deemed inappropriate or not serving the purpose of the application.</li>
+						<li>Photos related to products or offerings can be uploaded along with other details.</li>
+						</ul>
+			</div>
+			 <footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+						<span class="copyright">Copyright &copy; Your Website 2017</span>
+						</div>
+					<div class="col-md-6">
+						<ul class="list-inline social-buttons">
+							<li><a href="#"><i class="fa fa-twitter"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-linkedin"></i></a>
+							</li>
+						</ul>
+					</div>
+					</div>
+				</div>
+			</footer>
+        </div>
+	</body>
+</html>
