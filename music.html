@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+	<head>
+		<title>Login page</title>
+		<link href="css/style1.css" rel="stylesheet">
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		 <!-- Custom Fonts -->
+		<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+		 <link href="css/agency.min.css" rel="stylesheet">
+               
+
+	</head>
+	<body>
+		<div class="main">
+			<div class="head">
+				<div class="subhead">
+					<img src="img/images.png" class="logo">
+					<h2 class="title">UCM ISO MART</h2>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="submenu">
+					<ul class="nav">
+						<li><a href="login.html">Home</a></li>
+						<li><a href="aboutus.html">About Us</a></li>
+						<li><a href="postanad.html">Post an ad</a>
+							<ul class="subnav">
+								<li><a href="accomadation.html">Accomadation</a></li>
+								<li><a href="carpooling.html">Carpooling</a></li>
+								<li><a href="electronics.html">Electronics</a></li>
+								<li><a href="books.html">Books</a></li>
+							</ul>
+						</li>
+						<li><a href="myucmmart.html">My UCM MART</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			<div >
+					<div class="tables">
+						<form>
+							<input type="text" placeholder="Search..." required>
+							<input type="button" value="Search">
+						</form>
+					</div>
+					<span class="table">
+						<table>
+							<tr><td>Refine your search</td></tr>
+							<tr><td>Requirement type
+								<tr><td><a href="">Available</a></td></tr>
+								<tr><td><a href="">Wanted</a></td></tr>
+							</td>
+							</tr>
+							<tr><td>Category
+								<button onclick="myFunction()">+</button>
+								<div id="myDIV">
+									<ul class="div">
+										<li><a href="accomadation.html">Accomadation</a></li>
+										<li><a href="carpooling.html">Carpooling</a></li>
+										<li><a href="electronics.html">Electronics</a></li>
+										<li><a href="books.html">Books</a></li>
+									</ul>
+								</div>
+							</td>
+							</tr>
+							<tr><td>Item type
+								<button onclick="myFunction1()">+</button>
+								<div id="myDIV1">
+									<ul class="div">
+										<li><a href="music.html">Music</a></li>
+										<li><a href="computer.html">Computer</a></li>
+										<li><a href="telivision.html">Telivision</a></li>
+										<li><a href="camera.html">Camera</a></li>
+										<li><a href="phone.html">Phone</a></li>
+									</ul>
+								</div>
+							</td>
+							</tr>
+							<tr><td>Sub type
+								<button onclick="myFunction2()">+</button>
+								<div id="myDIV2">
+									<form>
+										<input type="checkbox" name="subtype" value="mp3 audio">MP3 Audio<br>
+										<input type="checkbox" name="subtype" value="player">CD/DVD player<br>
+										<input type="checkbox" name="subtype" value="Headphones">Headphones<br>
+										<input type="checkbox" name="subtype" value="Microphones">Microphones<br>
+										<input type="checkbox" name="subtype" value="Homeaudio">HomeAudio<br>
+									</form>
+								</div>
+							</td></tr>
+						<tr><td>Price Range</td></tr>
+						<tr><td>
+							<form>
+								<input type="number" name="min" min="1" max="10000">-
+								<input type="number" name="max" min="1" max="40000">
+							</form>
+						<input type="submit" value="Refine">
+						</td></tr>
+						</table>
+					</span>
+			</div>
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+						<span class="copyright">Copyright &copy; Your Website 2017</span>
+						</div>
+					<div class="col-md-6">
+						<ul class="list-inline social-buttons">
+							<li><a href="#"><i class="fa fa-twitter"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-linkedin"></i></a>
+							</li>
+						</ul>
+					</div>
+					</div>
+				</div>
+			</footer>
+        </div>
+		<script>
+function myFunction() {
+    var x = document.getElementById('myDIV');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+function myFunction1() {
+    var x = document.getElementById('myDIV1');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+function myFunction2() {
+    var x = document.getElementById('myDIV2');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+	</body>
+</html>
