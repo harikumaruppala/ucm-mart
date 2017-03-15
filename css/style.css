@@ -1,0 +1,159 @@
+*{margin:0px;padding:0px;}
+.main{
+width:100%;height:auto;margin:0px auto;
+}
+.main .head{
+width:100%;height:100px;background:#800000;
+}
+.head .subhead{
+width:1000px;height:100px;margin:0px auto;
+}
+.subhead .logo{
+float:left;width:100px;height:50px;margin-top:20px;
+}
+.subhead .title{
+float:left;color:#EEEEEE;margin-top:20px;font-size:30px;
+}
+.subhead .icon{
+width:40px;height:40px;float:right;margin-top:20px;margin-left:5px;
+}
+.subhead .icon:hover{
+border-radius:40px;
+}
+.main .menu{
+width:100%;height:40px;background:#800000;
+}
+.menu .submenu{
+width:1000px;height:40px;margin:0px auto;
+
+}
+.submenu .nav{
+list-style:none;
+}
+.submenu .nav li{
+float:left;width:250px;height:40px;background:#FFFFFF;text-align:center;line-height:40px;
+
+}
+.submenu .nav li a{
+text-decoration:none;color:#800000;
+}
+.submenu .nav li:hover{
+background:url(../img/btn2.png);background-size:100% 100%;
+}
+.submenu .nav li:hover a{
+color:#800000;font-size:20px;
+}
+
+
+.nav .subnav{
+list-style:none;visibility:hidden;
+}
+.nav li:hover .subnav{
+visibility:visible;
+}
+.subnav li a{
+color:blue !important;font-size:16px !important;
+}
+.subnav li:hover a{
+color:white !important;
+}
+.subnav li{margin-left:0px !important;border-bottom:3px solid blue !important ;}
+
+.subnav .subsubnav{
+list-style:none;visibility:hidden;position:relative;left:195px;top:-40px;
+}
+.subnav li:hover .subsubnav{
+visibility:visible;
+}
+.subnav .subsubnav li a{color:green !important;}
+.subsubnav li:hover a{
+color:white !important;
+}
+.subsubnav li{border-left:2px solid green;}
+
+
+.main .slider{
+width:1000px;height:150px;background:url(../img/Header.jpg);margin:0px auto;background-size:100% 100%;
+}
+.main .content{
+width:1000px;height:400px;margin:0px auto;
+}
+.main .servicecontent{
+height:1239px;
+}
+.content .box1{
+width:250px;height:400px;background:#800000;float:left;
+}
+.content .box2{
+width:500px;height:400px;background:#FFFFFF;float:left;
+}
+.content .box3{
+width:250px;height:400px;background:#800000;float:left;
+}
+
+/*box1 menu */
+.box1 .select{
+margin-left:70px;margin-top:20px;
+
+}
+.box3 .select{
+margin-left:70px;margin-top:20px;
+
+}
+form {
+                width:500px;
+                margin-left:100px;
+				margin-top:20px;
+}
+.box2 .search {
+                padding:8px 15px;
+                background:rgba(50, 50, 50, 0.2);
+                border:0px solid #dbdbdb;
+				
+}
+.box2 .button {
+                position:relative;
+                padding:6px 15px;
+                left:-8px;
+                border:2px solid #207cca;
+                background-color:#207cca;
+                color:#fafafa;
+}
+.box2 .button:hover  {
+                background-color:#fafafa;
+                color:#207cca;
+}
+.box2 .sub{
+	text-align:center;margin-top:30px;
+}
+.sub .select{
+	margin-top:20px;margin-left:10px;
+}
+.box2 .select1{
+	margin-top:20px; text-align:center;
+}
+.select1 .select{
+	margin-top:20px;margin-left:10px;
+}
+.box2 .button1{
+	margin-top:20px; text-align:center;
+}
+.box1 .image{
+width:80%;height:200px;margin-left:10%;margin-top:70px;
+}
+.box3 .image{
+width:80%;height:200px;margin-left:10%;margin-top:70px;
+}
+.main .list{
+	width:1000px;height:200px;margin:0px auto;background-color:#800000;color:white;
+}
+.list .sublist li{
+	width:1000px;margin-left:20px;
+}
+.tables{
+	width:300px;border:2px solid grey;
+}
+.tables .table{
+	margin-left:100px;margin-top:30px;padding-left:300px;
+}
+
