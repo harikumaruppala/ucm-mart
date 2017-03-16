@@ -44,34 +44,135 @@
 			</div>
 			<div >
 			<br>
-		</div>
-		<table id="form_id" style="width:998px; height:490px; cellspacing="0" cellpadding="0" border="0">
-			<tbody>
-				<tr>
-					<td>
-						<span style="border:1px;width:868px">
-							<label style="	margin-left:25px;;color:#1c79c9;;font-weight:bold;font-size:20px;font-family:arial;text-decoration:none">Post An Advertisement for Accommodation</label>
-						</span>
-					</td>
-				</tr>
+			</div>
+			<div>
+						
+				<h2 style="	margin-left:25px;;color:#1c79c9;;font-weight:bold;font-size:20px;font-family:arial;text-decoration:none">Post An Advertisement for Accommodation</h2>
+	
+
+				<!-- <Section for advertisement details> -->
+				<table class="outerbox"  style="padding-top:10px;padding-bottom:10px;" cellspacing="0" cellpadding="0" border="0" width="978px">
+				<form>
+				<fieldset>
+					  <legend>Requirement Details:</legend>
+					  Requirement Type: <label id="reqLabel"></label><br>
+					  Choose Category: <label id="ChooseCatLabel" value="Accomadation"> Accomadation </label><br> <!-- label should be retrieved from db !-->
+					  Requirement Type:
+						<input type="radio" name="Requirement Type" value="Offer"> I Offer
+						<input type="radio" name="Requirement Type" value="Require">Require<br>
+					 Accomadation Type:
+						<input type="radio" name="Accomadation Type" value="Sharing"> For Sharing
+						<input type="radio" name="Accomadation Type" value="Rent">For Rent
+						<input type="radio" name="Accomadation Type" value="Pg"> For PG
+						<input type="radio" name="Accomadation Type" value="Sale">For Sale
+						
+					 </fieldset>
+					 <fieldset>
+						<legend>Accomadation Details:</legend>
+						<h2>		You are posting ad for the region :</h2><label id="reqLabel"></label><br>
+						Ad Title:<input type="text" Value=""><br>
+						Location:<input type="text" Value=""><br>
+						Address:<input type="text" Value=""> <input type="text" Value=""> <input type="text" Value=""><br>
+								 <input type="text" Value=""> <input type="text" Value=""> <input type="text" Value=""><br>
+						No.Of Rooms:<input type="text" Value=""> <br>
+						<input type="radio" name="No.Of Rooms" value="Individual"> Individual
+						<input type="radio" name="No.Of Rooms" value="Appartments">Appartments<br>
+						Area:<input type="text" Value=""> <br>
+						Furnished:
+						<input type="radio" name="Furnished" value="UnFurnished"> UnFurnished
+						<input type="radio" name="Furnished" value="FullyFurnished">FullyFurnished
+						<input type="radio" name="Furnished" value="SemiFurnished"> SemiFurnished<br>
+						<div>
+						<div> <!-- use css float:left so that both can be side by side -->
+						In House Ammenties:
+						</div>
+						<div style="width:200px;height:150px;line-height:3em;overflow:auto;padding:5px;">
+						
+						<input type="checkbox" name="Ammenties" Value="Piped Gas">Piped Gas<br>
+						<input type="checkbox" name="Ammenties" Value="Internet">Internet<br>
+						<input type="checkbox" name="Ammenties" Value="Air condition">Air condition<br>
+						<input type="checkbox" name="Ammenties" Value="Intercom facility">Intercom facility<br>
+						<input type="checkbox" name="Ammenties" Value="Refrigerator">Refrigerator<br>
+						<input type="checkbox" name="Ammenties" Value="Washing Machine">Washing Machine<br>
+						<input type="checkbox" name="Ammenties" Value="Oven">Oven<br>
+						<input type="checkbox" name="Ammenties" Value="Balcony">Balcony<br>
+						</div>
+						</div>
+						<div>
+						<div> <!-- use css float:left so that both can be side by side -->
+						External Ammenties:
+						</div>
+						<div style="width:200px;height:150px;line-height:3em;overflow:auto;padding:5px;">
+						
+						<input type="checkbox" name="Ammenties" Value="Club House">Club House<br>
+						<input type="checkbox" name="Ammenties" Value="Gym">Gym<br>
+						<input type="checkbox" name="Ammenties" Value="Swimming Pool">Swimming Pool<br>
+						<input type="checkbox" name="Ammenties" Value="Basket Ball">Basket Ball<br>
+						<input type="checkbox" name="Ammenties" Value="Maintanance Staff">Maintanance Staff<br>
+						<input type="checkbox" name="Ammenties" Value="Reserved Parking">Reserved Parking<br>
+						<input type="checkbox" name="Ammenties" Value="park">park<br>
+						<input type="checkbox" name="Ammenties" Value="Laundry Service">Laundry Service<br>
+						</div>
+						</div>
+						<br>
+						Available From:
+						<input id="avail_from" class="textBoxStyle hasDatepicker" name="avail_from" value="" style="vertical-align: bottom;" type="date"> 
+						</input><br>
+						Description:
+						<textarea id="description_text" class="textBoxStyle" name="description_text" onkeypress="return checkAlphanumExcept(this,event,500)" style="width:198px;height:60px"></textarea>
+						<br>
+						Photo Upload:
+						<form method="post" enctype="multipart/form-data">
+							<input type="file" name="imgfile"><br>
+							<input type="submit" name="submit" value="upload">
+						</form>
+						<p> You Can Upload Upto 4 photos in *.JPEG, *.JPG format (Size limit: 2MB) </p>
+
+					 </fieldset>
+					 
+				</form>
+				<!-- <Finance Details section> -->
+				<!-- <labels for error msgs> -->
+				<form>
+					<legend>Financial Details</legend>
+					<span id="mandatory_monthlyRent" class="fontForAstric">* </span>
+					Monthly Rent  : <input id="price_rent" class="textBoxStyle" name="price_rent" value="0.00" maxlength="9" autocomplete="off" onkeypress="return chkNumericForAmount(this,event)" style="text-align:right;" type="text">
+					<span class="fontBodyINR" style="margin-left:5px; vertical-align:baseline;">( in USD )</span>
+					<span id = "rentLabel"/>
+					<br>
+					Deposit Amount 	:	<input id="deposit_amount" class="textBoxStyle" name="deposit_amount" value="0.00" maxlength="9" autocomplete="off" onkeypress="return chkNumericForAmount(this,event,9)" style="text-align:right;" type="text">
+					<span class="fontBodyINR" style="margin-left:5px; vertical-align:baseline;">( in USD )</span>
+					<span id = "depositLabel"/>
+					<br>
+					<span class="fontForAstric">* </span>
+					Is Negotiable	:	<label><input class="selectRadio" name="accoPost:vehicleisNegitiable" value="Y" type="radio">  Yes </label>
+										<label><input class="selectRadio" name="accoPost:vehicleisNegitiable" value="N" type="radio">  NO </label>
+					<span id = "negotiableLabel"/> 
+				</form>
 				
-				<tr>
-					<td>
-						<label class="topHeadingRows">Requirement Details</label>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<table style="margin-top:5px" cellspacing="0" cellpadding="0" border="0">
-							<tr>
-								<td>
-									<span style="margin-right:5px;padding-left:7px; ">Chosen Category</span>
-								</td>
-								
-							</tr>
-						</table>
-					</td>
-				</tr>
-			</tbody>
-		</table>
+				<form>
+					<legend>Owner Details</legend>
+					<!-- <ownername, contact and mail id should be retrieved from DB> -->
+					Owner Name  : <label id="ownerNameLabel" value=""> Hari Kumar </label> 
+					<br>
+					Mail Id 	:	<label id="ownerMailLabel" value=""> hxu66270@ucmo.edu </label> 
+					<span id = "depositLabel"/>
+					<br>
+					<span class="fontBodyLabel" style="color:red">* </span>
+					Share my contact Number in Ad details	:	<label><input class="selectRadio" name="share_num" checked="checked" value="Y" onclick="display_num(this,this.form)" style="font-family:arial;font-size:12;color:black;font-weight:normal;" type="radio">  Yes </label>
+																<label><input class="selectRadio" name="share_num" value="N" onclick="display_num(this,this.form)" style="font-family:arial;font-size:12;color:black;font-weight:normal;" type="radio">  NO </label>
+					<br>
+					Contact Number  : <label id="ownerContactLabel" value=""> (816) 745-8136 </label> 
+					<span id = "negotiableLabel"/> 
+					<br>
+					<input id="remember" name="remember" value="true" disabled="" type="checkbox">
+					<span id="accept" class="fontBody" style="padding-left:3px;">Please go through the Terms & Conditins before posting the advertisement.</span>
+					<br>
+					<input class="buttonStyle" id = "AccSubmit" value = "Post" type = "button"></input>
+					<input class="buttonStyle" id = "AccCancel" value = "Cancel" type = "button"></input>
+				</form>
+				</table>
+			</div>
+			</div>
+			
 	</body>
