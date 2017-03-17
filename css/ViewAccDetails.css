@@ -1,0 +1,24 @@
+html *{
+	font-size:12px;
+	font-family:Arial;	
+}
+
+body{border:1px solid black;
+outline-color:black;
+}
+table{border-top:double;
+border-bottom:double;
+border-left:double;
+border-right:double;
+margin-bottom:10px;
+margin-left:60px;
+margin-right:60px;
+margin-top:10px;
+background-image:url(PowderBlueBackground.jpg);
+padding:10px;}
+.buttons{
+	background-color:darkorange;
+	color:white;
+	font-weight:bold;
+}
+.wrapper{text-align:center;}

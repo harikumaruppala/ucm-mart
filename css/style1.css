@@ -91,3 +91,106 @@ table td{
 #myDIV1 .div{
 	list-style:none;
 }
+/* View Acc Details section.*/
+element.style {
+    border: 1px solid #828282;
+    margin: 0 auto;
+}
+/* View Acc Details Main Header Table section.*/
+element.style {
+    margin-top: 15px;
+}
+.AdvDetailsTitle {
+    color: #1c79c9;
+    font-family: arial;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+    text-decoration: none;
+}
+/* View Acc Details section.*/
+.topheaderBlock {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #f1f1f1;
+    border-color: #828282;
+    border-image: none;
+    border-style: solid none;
+    border-width: 1px;
+    height: 30px;
+/* for heading */
+.topHeadingRows {
+    color: black;
+    font-family: arial;
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 30px;
+}
+/* Acc Details_Location Details */
+element.style {
+    background-color: #f0f8ff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.outermainborder {
+    border: 1px solid #a6a6a6;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+/* Location*/
+
+.column4Class {
+    width: 200px;
+}
+element.style {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.fontBodyLabel {
+    color: black;
+    font-family: arial;
+    font-size: 12px;
+    font-weight: bold;
+	
+}
+.column2Class {
+    width: 5px;
+}
+element.style {
+    margin-top: 20px;
+}
+.fontBodyLabel {
+    color: black;
+    font-family: arial;
+    font-size: 12px;
+    font-weight: bold;
+}
+/*address */
+
+.column1Class {
+    width: 190px;
+}
+element.style {
+    margin-top: 20px;
+}
+.fontBody {
+    color: black;
+    font-family: arial;
+    font-size: 12px !important;
+    font-weight: normal;
+}
+/**/
+.column3Class {
+    width: 180px;
+}
+
+element.style {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
