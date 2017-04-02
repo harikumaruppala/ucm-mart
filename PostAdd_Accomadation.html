@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+	<head>
+		<title>View Accomadation Details</title>
+				 
+		<link rel="stylesheet" type="text/css" href="css/ViewAccDetails.css">
+		
+		<!-- Load jQuery UI CSS  -->
+	   <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	   
+	   <!-- Load jQuery JS -->
+	   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	   <!-- Load jQuery UI Main JS  -->
+	   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	   
+	   <!-- Load SCRIPT.JS which will create datepicker for input field  -->
+	   <script>
+		  $( function() {
+			$( "#datepicker" ).datepicker();
+		  } );
+		</script>
+               
+
+	</head>
+	<body background="img/background.jpg">
+		<div class="main">
+			<div class="head">
+				<div class="subhead">
+					<!-- <img src="img/images.png" class="logo">!-->
+					<h2 class="title">UCM ISO MART</h2>
+					<div>
+						<input class="LogoutButton" type = "button" value="LogOut" />
+					</div>
+				</div>
+			</div>
+				<div class="menu">
+					<div class="submenu">
+						<ul class="nav">
+							<!-- <li><a></a></li> -->
+							<li><a href="login.html">Home</a></li>
+							<!-- <li><a></a></li> -->
+							<li><a href="aboutus.html">About Us</a></li>
+							<!-- <li><a></a></li> -->
+							<li><a href="postanad.html">Post an Ad</a>
+								<ul class="subnav">
+									<li><a href="accomadation.html">Accomadation</a></li>
+									<li><a href="carpooling.html">Carpooling</a></li>
+									<li><a href="electronics.html">Electronics</a></li>
+									<li><a href="books.html">Books</a></li>
+								</ul>
+							</li>
+							<!-- <li><a></a></li> -->
+							<li><a href="myucmmart.html">My UCM MART</a></li>
+							
+						
+						</ul>
+					</div>
+				</div>
+		</div>
+			<!-- </div> -->
+			
+				
+				<br>
+				<br>
+				<form>
+					<h3 style="color:Blue">Post An Advertisement for Accommodation </h3>
+					<br>
+					<p><hr><b>Requirement Details</b><hr></p>
+					<table cellspacing="15">
+						<tr><td><b>Chosen Category<b></td><td><b>: <b></td><td id = "lableCategory">Accommodation</td> 	 	
+						<td></td><td></td></tr>
+						<tr></tr>
+						<tr><td><span style="color:red">* </span><b>Requirement Type<b></td>
+							<td><b>: <b></td>
+							<td><input type="radio" size="25" name="Requirement Type" value="Offer">&nbsp I Offer  &nbsp &nbsp </input>
+								<input type="radio" name="Requirement Type" value="Require">&nbsp I Require<br> </input></td>
+							<td></td>							
+						</tr>
+						<tr></tr>
+						<tr><td><span style="color:red">* </span><b>Deposit Amount(in USD)<b></td>
+							<td><b>: <b></td>
+							<td><input type="radio" name="Accomadation Type" value="Sharing">&nbsp For Sharing &nbsp &nbsp </input>
+								<input type="radio" name="Accomadation Type" value="Rent">&nbsp For Rent &nbsp &nbsp </input>
+								<input type="radio" name="Accomadation Type" value="PG">&nbsp For PG &nbsp	&nbsp
+								<input type="radio" name="Accomadation Type" value="Sale">&nbsp For Sale &nbsp &nbsp <br></td>
+						</tr>
+						<tr></tr>
+						
+					</table>
+					<p><hr><b>Accomadation Details</b><hr></p>
+					<table cellspacing="15">
+						
+						<tr><td><p style="color:Blue" >Posting an Add for the region:  </p></td></tr>
+						<tr><td><span style="color:red">* </span><b>Ad Title</b></td><td><b>:</b></td>
+							<td><input type="text" Value=""><br></td></tr>
+						<tr></tr>
+						<tr><td><span style="color:red">* </span><b>Location</b></td><td><b>:</b></td>
+							<td><input type="text" Value=""><br></td></tr>
+						<tr></tr>
+						<tr><td><span style="color:red">* </span><b>Address</b></td><td><b>:</b></td>
+							<td><input type="text" Value=""> <input type="text" Value=""> <br>
+								<input type="text" Value=""> <input type="text" Value=""> <br>
+								<input type="text" Value=""> <input type="text" Value=""> <br></td></tr>
+						<tr></tr>
+						<tr><td><span style="color:red">* </span><b>No. of Rooms</b></td><td><b>:</b></td>
+							<td><input type="text"  value="0" maxlength="5" style="text-align:left"><br></td>
+							<td><input type="radio" name="NoOfRooms" value="Rooms" >&nbsp 1 BHK  &nbsp &nbsp </input>
+								<input type="radio" name="NoOfRooms" value="Rooms">&nbsp 2 BHK<br> </input></td>
+							<td><label id= "RoomsLabel" > </label> </td><td> </td><td> </td>
+						</tr>
+						<tr></tr>
+						<tr><td><span style="color:red">* </span><b>Area</b></td><td><b>:</b></td>
+							<td><input type="text" Value=""><br></td>
+						</tr>
+						<tr></tr>
+						<tr><td><span style="color:red">* </span><b>Furnished<b></td>
+							<td><b>: <b></td>
+							<td><input type="radio" name="Furnished Type" value="Unfurnished">&nbsp Unfurnished &nbsp &nbsp </input>
+								<input type="radio" name="Furnished Type" value="Semi Furnished">&nbsp Semi Furnished &nbsp &nbsp </input>
+								<input type="radio" name="Furnished Type" value="Fully Furnished">&nbsp Fully Furnished &nbsp	&nbsp <br></td>
+						</tr>
+						<tr><td><b>In House Amenities</b></td><td><b>:</b></td>
+							<td><div style="width:200px;height:150px;line-height:3em;overflow:auto;padding:5px;border:1px Solid black">
+								<input type="checkbox" name="Ammenties" Value="Piped Gas">&nbsp Piped Gas<br>
+								<input type="checkbox" name="Ammenties" Value="Internet">&nbsp Internet<br>
+								<input type="checkbox" name="Ammenties" Value="Air condition">&nbsp Air condition<br>
+								<input type="checkbox" name="Ammenties" Value="Intercom facility">&nbsp Intercom facility<br>
+								<input type="checkbox" name="Ammenties" Value="Refrigerator">&nbsp Refrigerator<br>
+								<input type="checkbox" name="Ammenties" Value="Washing Machine">&nbsp Washing Machine<br>
+								<input type="checkbox" name="Ammenties" Value="Oven">&nbsp Oven<br>
+								<input type="checkbox" name="Ammenties" Value="Balcony">&nbsp Balcony<br>
+							</div></td>
+						</tr>
+						<tr><td><b>External Amenities</b></td><td><b>:</b></td>
+							<td><div style="width:200px;height:150px;line-height:3em;overflow:auto;padding:5px;border:1px Solid black">
+								<input type="checkbox" name="Ammenties" Value="Club House">&nbsp Club House<br>
+								<input type="checkbox" name="Ammenties" Value="Gym">&nbsp Gym<br>
+								<input type="checkbox" name="Ammenties" Value="Swimming Pool">&nbsp Swimming Pool<br>
+								<input type="checkbox" name="Ammenties" Value="Basket Ball">&nbsp Basket Ball<br>
+								<input type="checkbox" name="Ammenties" Value="Maintanance Staff">&nbsp Maintanance Staff<br>
+								<input type="checkbox" name="Ammenties" Value="Reserved Parking">&nbsp Reserved Parking<br>
+								<input type="checkbox" name="Ammenties" Value="park">&nbsp park<br>
+								<input type="checkbox" name="Ammenties" Value="Laundry Service">&nbsp Laundry Service<br>
+							</div></td>
+						</tr>
+						
+						<tr></tr>
+						<tr><td><span style="color:red">* </span><b>Available From</b></td><td><b>:</b></td>
+							<td><input id="datepicker"   style="vertical-align: bottom;" type="text"></td>
+						</tr>
+						<tr><td><b>Description</b></td><td><b>:</b></td>
+							<td> <textarea name="description_Text" id= "description_Text" style= "width:198px;height:60px;"> </textarea> </td>
+						</tr>	
+						<tr><td><b>Photo Upload</b></td><td><b>:</b></td>
+							<td><form method="post" enctype="multipart/form-data">
+									<input type="file" name="imgfile"> <input type="submit" name="submit" value="upload"> <br>
+								</form>
+								<br></td>
+							<td><p> You Can Upload Upto 4 photos in *.JPEG, *.JPG format (Size limit: 2MB) </p></td>
+						</tr>
+					</table >
+					<p><hr><b>Financial Details</b><hr></p>
+					<table cellspacing="15">
+						
+						<tr><td><span style="color:red">* </span><b>Monthly Rent</b></td><td><b>:</b></td>
+							<td><input id="price_rent" class="textBoxStyle" name="price_rent" value="0.00" maxlength="9" autocomplete="off"  style="text-align:right;" type="text"/>&nbsp (USD) <br></td>
+						</tr>
+						<tr></tr>
+						<tr><td><b>&nbsp Deposit Amount</b></td><td><b>:</b></td>
+							<td><input id="deposit_amount" class="textBoxStyle" name="deposit_amount" value="0.00" maxlength="9" autocomplete="off" style="text-align:right;" type="text">&nbsp (USD) <br></td>
+						</tr>
+						<tr></tr>
+						<tr><td><span style="color:red">* </span><b>Is Negotiable<b></td>
+							<td><b>: <b></td>
+							<td><input class="selectRadio" name="accoPost:vehicleisNegitiable" value="Y" type="radio">  &nbsp Yes &nbsp &nbsp </input>
+								<input class="selectRadio" name="accoPost:vehicleisNegitiable" value="N" type="radio">  &nbsp NO &nbsp &nbsp </input><br></td>
+						</tr>
+						
+					</table >
+					<p><hr><b>Owner Details</b><hr></p>
+					<table cellspacing="20">
+						<tr><td><b>Owner Details</b></td><td><b>:</b></td><td><label id="ownerNameLabel" value=""> Hari Kumar </label></td>
+							<td><b> Mail id</b></td><td></td><td><b>:</b></td><td><label id="ownerMailLabel" value=""> hxu66270@ucmo.edu </label><br></td></tr>
+						<tr><td><span style="color:red">* </span><b>Share my contact Number in Ad details<b></td>
+							<td><b>: <b></td>
+							<td><input class="selectRadio" name="share_num" value="Y" onclick="display_num(this,this.form)" style="font-family:arial;font-size:12;color:black;font-weight:normal;" type="radio"> &nbsp Yes &nbsp &nbsp </input>
+								<input class="selectRadio" name="share_num" value="N" onclick="display_num(this,this.form)" style="font-family:arial;font-size:12;color:black;font-weight:normal;" type="radio"> &nbsp NO &nbsp &nbsp </input><br></td>
+						</tr>
+						<tr><td><b>Contact Number</b></td><td><b>:</b></td><td><label id="ownerContactLabel" value=""> (816) 745-8136 </label></td></tr>
+					</table>
+					<!---<button class="buttons">Contact Owner</button><button class="buttons">Back</button>-->
+						<div class="wrapper">
+							<p><input class="buttons" type="button" value="Post" onclick="Post()"/>
+							<input class="buttons" type="button" value="Cancel" onclick="back()"/></p>
+						</div>
+				
+				</form>
+			
+			
+			
+	</body>

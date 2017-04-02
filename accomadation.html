@@ -24,6 +24,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- </div> -->
 			<div class="menu">
 				<div class="submenu">
 					<ul class="nav">
@@ -52,7 +53,7 @@
 						</form>
 					</div>
 					<span class="table">
-						<table>
+						<table class = "leftTable" style="float: left; width:19%" >
 							<tr><td>Refine your search</td></tr>
 							<tr><td>Requirement type
 								<tr><td><a href="">Available</a></td></tr>
@@ -94,21 +95,60 @@
 									</form>
 								</div>
 							</td></tr>
-						<tr><td>Price Range</td></tr>
-						<tr><td>
-							<form>
-								<input type="number" name="min" min="1" max="10000">-
-								<input type="number" name="max" min="1" max="40000">
-							</form>
+							<tr><td>Price Range</td></tr>
+							<tr><td>
+								<form>
+									<input type="number" name="min" min="1" max="10000">-
+									<input type="number" name="max" min="1" max="40000">
+								</form>
 						
 						<input type="submit" value="Refine">
 						</td></tr>
 						</table>
+						
+						
 					</span>
+					
+					<!-- <left table for display search results from db> -->
+					<p> <label input = "searchLabel" Value = "Few matches found for your search: ">Find the search results below </label>
+						<table class = "rightTable"  style="float: left; width:50%" cellspacing="20" vertical-align="middle" >
+							<thead style="background-color:powderblue">
+								<tr>
+									<th style="color:red">Detail</th>
+									<th style="color:red">Price (in USD)</th>
+									<th style="color:red">Expire (in Days)</th>
+									<th></th>
+								</tr>
+								
+							</thead>
+							
+							<tbody style="background-color:white ;height:100px">
+							
+								<tr>
+								
+									<td><label id="databaseLabelData"></label>Furnished Apartment</td>
+									<td>800</td>
+									<td>15</td>
+									<td><input id="viewbutton" type="button" value="View Details" onclick="callViewAccomDetailsFn()"></td>
+									
+								</tr>
+							
+							</tbody>
+							
+						</table>
+						<!-- function to navigate to specified html location when click operation is performed on View Details button--->
+						<script type="text/javascript">
+							function callViewAccomDetailsFn(){
+							window.location.href="ViewAccomDetails.html"
+							}
+						
+						</script>
+					
 			</div>
 			<footer>
 				<div class="container">
 					<div class="row">
+					<footer>
 						<div class="col-md-6">
 						<span class="copyright">Copyright &copy; Your Website 2017</span>
 						</div>
@@ -122,6 +162,7 @@
 							</li>
 						</ul>
 					</div>
+					</footer>
 					</div>
 				</div>
 			</footer>

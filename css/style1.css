@@ -31,6 +31,7 @@ width:100%;height:40px;background:#800000;
 width:1000px;height:40px;margin:0px auto;
 
 }
+
 .submenu .nav{
 list-style:none;
 }
@@ -76,10 +77,20 @@ color:white !important;
 .tables{
 	width:250px;border:2px solid grey;margin-left:180px;
 }
-table{
+.leftTable{
 	margin-left:180px;width: 250px;margin-top:20px;
 }
-table td{
+.rightTable{
+	margin-left:30px;
+margin-right:20px;
+margin-top:10px;
+/*background-color:powderblue;*/
+width:80%;
+padding:10px;
+}
+
+
+.leftTable td{
 	 border: 1px solid black;padding:2px 5px;
 }
 #myDIV .div{
@@ -91,6 +102,12 @@ table td{
 #myDIV1 .div{
 	list-style:none;
 }
+
+.col-md-6{
+position:fixed;
+bottom:0px;
+margin-left:auto;
+margin-right:auto;}
 /* View Acc Details section.*/
 element.style {
     border: 1px solid #828282;
